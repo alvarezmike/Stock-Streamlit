@@ -1,2 +1,6 @@
 # Stock-Streamlit
-Data Science Web App using Python combined with Streamlit package
+Data Science Web App using Python 
+
+# Packages
+- streamlit
+- yfinance
