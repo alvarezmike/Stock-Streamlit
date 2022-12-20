@@ -1,8 +1,8 @@
 # Stock-Streamlit
 - Data Science Web App using Python 
-- See it live: https://alvarezmike-stock-streamlit-app-dscgjt.streamlitapp.com/
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://stock-eda.streamlit.app/)
 
 # Packages
-- streamlit
-- yfinance
+- streamlit 1.13.0
+- yfinance 0.2.1
 
