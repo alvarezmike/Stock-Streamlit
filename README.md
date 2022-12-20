@@ -1,5 +1,4 @@
 # Stock-Streamlit
-- Data Science Web App using Python 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://stock-eda.streamlit.app/)
 
 # Packages
