@@ -1,3 +1,5 @@
+import json.decoder
+
 import streamlit as st
 import yfinance as yf
 import plotly.express as px
@@ -52,5 +54,9 @@ with table:
 
 with news:
     st.header(f"Latest news of {ticker}")
-    st.write(f"{tickerData.news[0]['title']} ")
-    st.write(f":newspaper: Link to full article: {tickerData.news[0]['link']}")
+    # handling json response in case of parsing error
+    try:
+        st.write(f"{tickerData.news[0]['title']} ")
+        st.write(f":newspaper: Link to full article: {tickerData.news[0]['link']}")
+    except json.decoder.JSONDecodeError:
+        st.write(tickerData.news)
