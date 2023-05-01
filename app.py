@@ -25,7 +25,7 @@ start_date = st.sidebar.date_input("Start date", datetime.date(2023, 1, 1))
 end_date = st.sidebar.date_input("End date", default_date_yesterday)
 data = yf.download(ticker, start=start_date, end=end_date)
 
-fig = px.line(data, x=data.index, y=data["Adj Close"], title=ticker)
+fig = px.line(data, x=data.index, y="Adj Close", title=ticker)
 st.plotly_chart(fig)
 
 st.markdown("""---""")
